@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CC1A1EF2B7AEFEB00217208 /* LocationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC1A1EE2B7AEFEB00217208 /* LocationDetailsView.swift */; };
 		6CD043A42B7AE7C700E51C24 /* MapsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD043A32B7AE7C700E51C24 /* MapsSwiftUIApp.swift */; };
 		6CD043A62B7AE7C700E51C24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD043A52B7AE7C700E51C24 /* ContentView.swift */; };
 		6CD043A82B7AE7C800E51C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD043A72B7AE7C800E51C24 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CC1A1EE2B7AEFEB00217208 /* LocationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsView.swift; sourceTree = "<group>"; };
 		6CD043A02B7AE7C700E51C24 /* MapsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD043A32B7AE7C700E51C24 /* MapsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsSwiftUIApp.swift; sourceTree = "<group>"; };
 		6CD043A52B7AE7C700E51C24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				6CD043A52B7AE7C700E51C24 /* ContentView.swift */,
 				6CD043A72B7AE7C800E51C24 /* Assets.xcassets */,
 				6CD043A92B7AE7C800E51C24 /* Preview Content */,
+				6CC1A1EE2B7AEFEB00217208 /* LocationDetailsView.swift */,
 			);
 			path = MapsSwiftUI;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CD043A62B7AE7C700E51C24 /* ContentView.swift in Sources */,
+				6CC1A1EF2B7AEFEB00217208 /* LocationDetailsView.swift in Sources */,
 				6CD043A42B7AE7C700E51C24 /* MapsSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +276,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MapsSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = BKHZ525CR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -279,6 +284,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MapsSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = BKHZ525CR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,6 +314,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
