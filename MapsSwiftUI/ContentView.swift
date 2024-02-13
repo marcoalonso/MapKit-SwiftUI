@@ -10,6 +10,9 @@ import MapKit
 
 struct ContentView: View {
     @State private var cameraPosition: MapCameraPosition = .region(.userRegion)
+    @State private var searchText = ""
+    @State private var results : [MKMapItem] = []
+    
     var body: some View {
         Map(position: $cameraPosition) {
             // Marker("My location", coordinate: .userLocation)
@@ -30,12 +33,42 @@ struct ContentView: View {
                         .foregroundStyle(.blue)
                 }
             }
+            
+            ForEach(results, id: \.self) { item in
+                let placemark = item.placemark
+                Marker(placemark.name ?? "", coordinate: placemark.coordinate)
+            }
+        }
+        .overlay(alignment: .top, content: {
+            TextField("Search for location ...", text: $searchText)
+                .font(.subheadline)
+                .padding(12)
+                .background(.white)
+                .cornerRadius(12)
+                .padding()
+                .shadow(radius: 12)
+        })
+        .onSubmit(of: .text) {
+            
+            Task {
+                await searchPlaces()
+            }
         }
         .mapControls {
             MapCompass()
             MapPitchToggle()
             MapUserLocationButton()
         }
+    }
+}
+
+extension ContentView {
+    func searchPlaces() async {
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = searchText
+        request.region = .userRegion
+        let results = try? await MKLocalSearch(request: request).start()
+        self.results = results?.mapItems ?? []
     }
 }
 
